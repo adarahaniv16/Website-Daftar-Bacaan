@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cambria', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+.logo {
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 10px;
+  object-position: left;
+  flex: left;
+  position: absolute;
+}
+
+nav {
+  background-color: #996da5;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.deskripsi {
+  text-align: center;
+}
+
+#Buku {
+  height: 170px;
+}
+
+.currentRead,
+.favorites,
+.wishlist,
+.completedRead {
+  float: left;
+  width: 55%;
+  text-align: center;
+  padding: 30px;
+  margin: 40px 0px 5px 20px;
+  background-color: #DCD6F7;
+  font-size: 20px;
+  box-shadow: 10px 10px 10px 5px #9A9483;
+}
+
+h2,
+h3 {
+  text-align: center;
+
+}
+
+p {
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #996da5;
+}
+
+li {
+  float: right;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 25px 50px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #745C97;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #655D8A;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.box {
+  float: left;
+  width: 100%;
+  font-size: 20px;
+  padding: 30px;
+  margin: 0px 10px 10px 5px;
+  background-color: #A68DAD;
+  text-align: left;
+  position: static;
+}
+
+.box img {
+  float: left;
+}
+
+
+.box p {
+  margin-left: 170px;
+}
+
+.box2 {
+  float: left;
+  text-align: center;
+  width: 40%;
+  height: 300px;
+  padding: 30px;
+  margin: 10px 20px 10px 35px;
+  background-color: #A68DAD;
+}
+
+.profile img {
+  width: 200px;
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: 60%;
+  text-align: justify;
+  background-color: #DCD6F7;
+}
+
+.card th {
+  padding: 0px 50px 0px 40px;
+}
+
+.fotoDiri {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #655D8A;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer p {
+  text-align: center;
+}
+
+#welcome {
+  background-color: #A68DAD;
+  padding: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    width: 100%;
+    padding: 0px;
+  }
+
+  #content,
+  #CurrentRead,
+  #favoriteBooks,
+  #completedRead {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    position: static;
+    float: left;
+    margin-left: auto;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  .logo {
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 20px;
+    margin-right: 20px;
+
+  }
+
+  .box p {
+    margin-left: 0px;
+
+  }
+
+  .box img {
+    padding: 20px;
+  }
+
+  #wishlist {
+    width: 100%;
+    padding: 10px;
+    position: static;
+    margin-left: auto;
+  }
+
+  #wishlist img {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .box2 {
+    width: 80%;
+    padding: 20px;
+    margin-right: 20px;
+    position: static;
+  }
+
+  .card {
+    width: 100%;
+    padding: 10px;
+    float: right;
+    position: static;
+    margin-top: 30px;
+  }
+
+  .card .fotoDiri {
+    width: 100px;
+    padding-bottom: 10px;
+  }
+
+  footer {
+    width: 100%;
+    display: block;
+    position: static;
+  }
+
+  .card th {
+    font-size: 9px;
+  }
+
+  .card td {
+    font-size: 9px;
+  }
+
+  li a,
+  .dropbtn {
+    width: 100%;
+    padding: 15px 20px;
+  }
+}
